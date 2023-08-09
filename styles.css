@@ -1,0 +1,48 @@
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(144, 174, 238);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: rgb(238, 144, 171);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(238, 229, 144);
+  }
+}
+
+.section {
+  background-color: white;
+}
+/*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+.carousel {
+  background: #007aeb;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width: 100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width: 100%;
+}
