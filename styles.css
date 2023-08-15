@@ -1,35 +1,51 @@
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
+.container-fluid {
+  padding: 30px;
+  background-color: #d8f3ff;
+  margin: 0 !important;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    background-color: rgb(144, 174, 238);
-  }
+nav {
+  margin: 0 !important;
+  padding: 0px !important;
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    background-color: rgb(238, 144, 171);
-  }
+.navbar-brand {
+  font-size: calc(20px + 0.390625vw);
+  padding-right: 2%;
+  color: #153c5b;
 }
 
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: rgb(238, 229, 144);
-  }
+.nav-item {
+  font-size: calc(16px + 0.390625vw);
+  padding-right: 10%;
+  color: #153c5b;
 }
 
-.section {
+.nav-link {
+  color: #153c5b;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+/* Navbar hover colour*/
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  color: #a0acbd;
+}
+
+section {
   background-color: white;
 }
+#carouselPadding {
+  margin: 0% 3% 0% 3%;
+}
 /*
-Removes white gap between slides - chagnge to base color of slide images
+2 pixel border around carousel images
 */
-.carousel {
-  background: #007aeb;
+.carousel-inner {
+  border: 2px solid #a0acbd;
 }
 
 /*
@@ -45,4 +61,29 @@ anchors are inline so you need ot make them block to go full width
 .carousel-item a {
   display: block;
   width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  /* padding the footer adds 40 to footer height */
+  padding-bottom: 140px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  background: #d8f3ff;
+  height: 100px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #153c5b;
+  padding: 20px;
+}
+
+#designed-by {
+  text-align: right;
 }
