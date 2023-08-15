@@ -12,7 +12,7 @@ nav {
 .navbar-brand {
   font-size: calc(20px + 0.390625vw);
   padding-right: 2%;
-  color: #153c5b;
+  color: #ad8d76;
 }
 
 .nav-item {
@@ -86,4 +86,19 @@ anchors are inline so you need ot make them block to go full width
 
 #designed-by {
   text-align: right;
+}
+
+.card-body {
+  background-color: #bcd5e3;
+  text-align: center;
+}
+
+.card-title {
+  color: #ad8d76;
+}
+
+.card-img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
 }
