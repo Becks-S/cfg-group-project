@@ -9,6 +9,9 @@
   margin: 0 !important;
 }
 
+h2 {
+  margin: 15px 0px 15px 0px;
+}
 /* unvisited link */
 #top a:link {
   color: #05386b;
@@ -28,6 +31,41 @@
 #top a:active {
   color: #05386b;
 }
+/*to update*/
+
+.bold {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+/* #centred-home {
+  margin: auto;
+  padding: 15px 10% 15px 10%;
+}*/
+
+#homepage-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-home {
+  border-radius: 25%;
+}
+
+/*
+#homepageimage {
+  margin: auto;
+}
+#circleimage {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border-radius: 50%;
+}*/
 
 nav {
   margin: 0 !important;
