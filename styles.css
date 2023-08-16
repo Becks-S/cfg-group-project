@@ -1,7 +1,32 @@
 .container-fluid {
   padding: 30px;
-  background-color: #d8f3ff;
+  background: rgb(55, 150, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 150, 131, 1) 0%,
+    rgba(142, 228, 175, 1) 92%
+  );
   margin: 0 !important;
+}
+
+/* unvisited link */
+#top a:link {
+  color: #05386b;
+}
+
+/* visited link */
+#top a:visited {
+  color: #05386b !important;
+}
+
+/* mouse over link */
+#top a:hover {
+  color: #379683 !important;
+}
+
+/* selected link */
+#top a:active {
+  color: #05386b;
 }
 
 nav {
@@ -10,19 +35,24 @@ nav {
 }
 
 .navbar-brand {
-  font-size: calc(20px + 0.390625vw);
+  font-size: calc(26px + 0.390625vw);
   padding-right: 2%;
-  color: #ad8d76;
+  color: #05386b;
+}
+
+.navbar-brand > li > a:hover,
+.navbar-brand > li > a:focus {
+  color: #05386b !important;
 }
 
 .nav-item {
   font-size: calc(16px + 0.390625vw);
   padding-right: 10%;
-  color: #153c5b;
+  color: #05386b;
 }
 
 .nav-link {
-  color: #153c5b;
+  color: #edf5e1;
 }
 
 .navbar {
@@ -32,12 +62,9 @@ nav {
 /* Navbar hover colour*/
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
-  color: #a0acbd;
+  color: #05386b;
 }
 
-section {
-  background-color: white;
-}
 #carouselPadding {
   margin: 0% 3% 0% 3%;
 }
@@ -45,7 +72,7 @@ section {
 2 pixel border around carousel images
 */
 .carousel-inner {
-  border: 2px solid #a0acbd;
+  border: 2px solid #379683;
 }
 
 /*
@@ -62,10 +89,11 @@ anchors are inline so you need ot make them block to go full width
   display: block;
   width: 100%;
 }
-
+/*page background colour*/
 .wrapper {
   min-height: 100%;
   position: relative;
+  background-color: #edf5e1;
 }
 
 .content {
@@ -75,7 +103,12 @@ anchors are inline so you need ot make them block to go full width
 
 #footer {
   bottom: 0;
-  background: #d8f3ff;
+  background: rgb(55, 150, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 150, 131, 1) 0%,
+    rgba(142, 228, 175, 1) 92%
+  );
   height: 100px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -89,14 +122,12 @@ anchors are inline so you need ot make them block to go full width
 }
 
 .card-body {
-  background-color: #bcd5e3;
+  background-color: #05386b;
   text-align: center;
-  border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
 }
 
 .card-title {
-  color: #ad8d76;
+  color: #8ee4af;
   font-weight: bolder;
 }
 
@@ -106,6 +137,104 @@ anchors are inline so you need ot make them block to go full width
   object-fit: cover;
 }
 
+.card-text {
+  color: #edf5e1;
+}
+
 .d-grid {
   display: inline-flex;
+}
+
+.row {
+  width: 80%;
+  margin: auto;
+}
+
+/*Cost of Ownership Calculator*/
+
+#texta {
+  resize: none;
+}
+
+#number {
+  margin: 12px;
+}
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #379683;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #379683;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#calculationresult {
+  display: none;
+}
+
+.ownership-container {
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+
+#button {
+  background-color: #379683;
+  color: white;
+  border-style: solid;
+  border-color: #05386b;
+  padding: 9px;
 }
