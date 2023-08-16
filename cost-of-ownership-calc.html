@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cats and Dogs</title>
+    <title>Cost of Ownership Calculator</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -250,16 +250,48 @@
 
     <section>
       <section>
-        <h2 class="text-center">WHY WE LOVE THEM</h2>
-        <p class="text-center text-wrap">People love cats and dogs because they provide companionship and unconditional love. Pets are especially helpful for people living alone. In addition, people with pets make social connections with strangers out in public and are more likely to have positive interactions with family and friends. Cats and dogs have long provided us with comfort, camaraderie, and unconditional love</p>
-       </section>
+
+        <div class="ownership-container">
+<h2>Cost of Ownership Calculator</h2>
+<p class="ownership">Pets bring countless benefits to your wellbeing, but it's important to plan for the costs that can be associated with pet ownership.  From one-off costs like  neutering and microchipping to the day-to-day essentials like food and litter. </p>
+<p class="ownership">This calculator estimates the average annual cost of keeping a pet.</p>
+
+<form id="form1">
+  Select pet: <div class="custom-select" style="width:200px;"><select id="species">
+    <option>Species</option>
+    <option value="Cat">Cat</option>
+    <option value="Dog">Dog</option>
+  </select></div><br/>
+
+  Select number: <div class="custom-select" style="width:200px;"><select id="number">
+    <option>Number</option>
+    <option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+  </select></div><br/>
+            <input
+            id="button"
+              type="button"
+              value="Calculate"
+              onclick="calculate(); showdiv();"
+            /><br><br>
+            <div id="calculationresult">
+  £<output id="texta"> </output> per year
+  <p>Costs based on estimates by Battersea Dogs & Cats Home</p>
+  </div>
+</form>
+
+       
        
        <!-- Paragraph or List depending on content-->
-</section>
-      
 
-      
-    </section>
      </main>
     </div>
 
