@@ -74,7 +74,6 @@ anchors are inline so you need ot make them block to go full width
 }
 
 #footer {
-  position: absolute;
   bottom: 0;
   background: #d8f3ff;
   height: 100px;
@@ -86,19 +85,27 @@ anchors are inline so you need ot make them block to go full width
 
 #designed-by {
   text-align: right;
+  color: #153c5b;
 }
 
 .card-body {
   background-color: #bcd5e3;
   text-align: center;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 .card-title {
   color: #ad8d76;
+  font-weight: bolder;
 }
 
 .card-img {
   width: 100% !important;
-  height: 200px !important;
+  height: 250px !important;
   object-fit: cover;
+}
+
+.d-grid {
+  display: inline-flex;
 }
